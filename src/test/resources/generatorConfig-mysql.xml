@@ -41,6 +41,10 @@
                         password="">
         </jdbcConnection>
 
+        <javaTypeResolver type="com.zhangj.mybatis.generator.ext.plugins.MyJavaTypeResolverDefaultImpl">
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
         <!--生成实体类 指定包名-->
         <javaModelGenerator targetPackage="com.zhangj.mybatis.generator.ext.plugins.model"
                             targetProject="src/test/java">
